@@ -26,9 +26,9 @@ int main(void){
     while(1){
         ShowMenu();
         int select;
-        cout << "선택: " << endl;
+        cout << "선택: ";
         cin >> select;
-
+        cout << endl;
         if (select==MAKE){
             MakeAccount();
         }
@@ -108,7 +108,7 @@ void WithDraw(void){
 }
 
 void PrintAllAccount(void){
-    for (int i=0; i<=accNum; i++) {
+    for (int i=0; i<accNum; i++) {
         cout << "계좌ID: " << accArr[i].accID << endl;
         cout << "이 름: " << accArr[i].cusName << endl;
         cout << "잔 액: " << accArr[i].balance << endl;
