@@ -14,7 +14,7 @@ class BoundCheckAccountPtrArray {
         BoundCheckAccountPtrArray(int len=100);
         ACCOUNT_PTR& operator[] (int idx);
         ACCOUNT_PTR operator[] (int idx) const;
-        int GetArrLen() const
+        int GetArrLen() const;
         ~BoundCheckAccountPtrArray();
 };
 
