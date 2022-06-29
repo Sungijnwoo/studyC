@@ -36,6 +36,7 @@ class SmartPtr {
             return posptr;
         }
         ~SmartPtr() {
+            cout << "Smt deconstruct" << endl;
             delete posptr;
         }
 };
@@ -54,5 +55,6 @@ int main(void) {
     cout << *sptr1;
     cout << *sptr2;
     cout << *sptr3;
+    cout << ptr1;
     return 0;
 }
