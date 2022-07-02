@@ -49,12 +49,14 @@ int main(void) {
     cout << *sptr2;
     cout << *sptr3;
 
+    Point sptr4 = *sptr3;
+
     sptr1->SetPos(10, 20);
     sptr2->SetPos(30, 40);
     sptr3->SetPos(50, 60);
     cout << *sptr1;
     cout << *sptr2;
     cout << *sptr3;
-    cout << ptr1;
+    cout << sptr4;
     return 0;
 }
